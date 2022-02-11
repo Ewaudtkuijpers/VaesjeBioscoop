@@ -11,18 +11,25 @@ li {
     float: left;
 }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-        li a:hover {
-            background-color: #111;
-        }
+li a:hover {
+    background-color: #111;
+}
 
 body {
     background-color:#8CA0FA;
+}
+
+footer {
+  justify-content: center;
+  padding: 5px;
+  background-color: white;
+  color: black;
 }
