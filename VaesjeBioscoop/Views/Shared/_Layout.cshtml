@@ -7,6 +7,7 @@
     <title>@ViewData["Title"] - VaesjeBioscoop</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+@RenderBody()
 <body>
     <ul>
         <li> <a class="active" href="#home"> Home</a> </li>
@@ -14,7 +15,9 @@
         <li> <a href="#contact"> Bioscopen</a> </li>
         <li> <a href="#about"> Contact</a> </li>
     </ul>
-    @RenderBody()
+    <div class="Bioscoop">
+        <img src="/img/bg-home.jpg" alt="bioscoop">
+    </div>
     <footer>footer</footer>
 </body>
 
