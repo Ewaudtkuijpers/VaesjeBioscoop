@@ -17,7 +17,7 @@ ul {
     margin-bottom: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #8CA0FA;
 }
 
 div {
@@ -43,7 +43,7 @@ li a {
 }
 
     li a:hover {
-        background-color: #9CD3F0;
+        background-color: black;
     }
 
 footer {
