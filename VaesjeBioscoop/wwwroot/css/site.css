@@ -20,6 +20,16 @@ ul {
     background-color: #333;
 }
 
+div {
+    background-color: black;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 li {
     float: left;
 }
@@ -32,13 +42,13 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
-}
+    li a:hover {
+        background-color: #9CD3F0;
+    }
 
 footer {
-  justify-content: center;
-  padding: 5px;
-  background-color: white;
-  color: black;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+    color: black;
 }
