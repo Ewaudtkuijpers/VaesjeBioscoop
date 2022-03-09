@@ -23,6 +23,12 @@ namespace VaesjeBioscoop.Controllers
             return View();
         }
 
+        [Route("contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
