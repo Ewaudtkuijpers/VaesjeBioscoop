@@ -1,5 +1,4 @@
-﻿body {
-    background-color: #8CA0FA;
+﻿body {   
     text-align: center;
     margin: 0;
     padding: 0;
@@ -51,6 +50,7 @@ li a {
 
 footer {
     justify-content: center;
+    margin: 0;
     padding: 0px;
     background-color: white;
     color: black;
