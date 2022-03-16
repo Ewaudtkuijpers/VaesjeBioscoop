@@ -42,6 +42,7 @@ namespace VaesjeBioscoop.Controllers
             return View(person);
         }
 
+        [Route("Films")]
         public IActionResult Films()
         {
             return View();
