@@ -1,7 +1,8 @@
-﻿body {   
+﻿body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #8960E0;
 }
 
 ul {
@@ -13,7 +14,7 @@ ul {
     margin-bottom: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lawngreen;
+    background-color: #8CA0FA;
 }
 
 div {
@@ -45,13 +46,13 @@ li a {
 }
 
     li a:hover {
-        background-color: black;
+        background-color: #DF64FA;
     }
 
 footer {
     justify-content: center;
     margin: 0;
     padding: 0px;
-    background-color: white;
+    background-color: #8960E0;
     color: black;
 }
