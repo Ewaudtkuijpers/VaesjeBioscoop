@@ -1,10 +1,31 @@
-﻿@{
+﻿@model Person
+@{
     ViewData["Title"] = "Contact";
 }
 <h1>@ViewData["Title"]</h1>
 
-<form method="post"> 
-Voornaam:<input type="text" name="voornaam" />
-Achternaam: <input type="text" name="achternaam" />
-<input type="submit" value="opslaan" />
+<form method="post">
+
+    <div>
+        @Html.LabelFor(m=> m.Firstname)
+        @Html.TextBoxFor(m=> m.Firstname)
+        @Html.ValidationMessageFor(m=> m.Firstname)
+    </div>
+
+    <div>
+        @Html.LabelFor(m=> m.LastName)
+        @Html.TextBoxFor(m=> m.LastName)
+        @Html.ValidationMessageFor(m=> m.LastName)
+    </div>
+
+     <div>
+        @Html.LabelFor(m=> m.Email)
+        @Html.TextBoxFor(m=> m.Email)
+        @Html.ValidationMessageFor(m=> m.Email)
+    </div>
+
+    
+
+    <input type="submit" value="opslaan" />
+
 </form>

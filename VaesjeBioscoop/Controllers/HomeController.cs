@@ -32,12 +32,14 @@ namespace VaesjeBioscoop.Controllers
         
         [HttpPost]
         [Route("contact")]        
-        public IActionResult Contact(string voornaam, string achternaam)
+        public IActionResult Contact(Person person)
         {
-            ViewData["voornaam"] = voornaam;
-            ViewData["achternaam"] = achternaam;
+            if (ModelState.IsValid)
+            {
+                return Redirect("/succes");
+            }
 
-            return View();
+            return View(person);
         }
 
         public IActionResult Films()
