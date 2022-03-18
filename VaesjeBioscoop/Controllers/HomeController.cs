@@ -54,6 +54,12 @@ namespace VaesjeBioscoop.Controllers
             return View();
         }
 
+        [Route("Detail")]
+        public IActionResult Detail()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
