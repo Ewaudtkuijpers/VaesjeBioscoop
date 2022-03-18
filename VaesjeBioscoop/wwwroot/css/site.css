@@ -43,6 +43,16 @@ div.Filmpagina {
     flex-flow:row;
 }
 
+div.Detail {
+    background-color: black;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 img {
     margin-top: 0;
     margin-bottom: 0;
