@@ -1,10 +1,22 @@
-﻿@{
+﻿@model List<string>
+@{
     ViewData["Title"] = "Home Page";
 }
+
 
 <div class="Bioscoop">
     <img src="/img/bg-home.jpg" alt="bioscoop">
 </div>
+
+<footer>
+    <div class= "text-center">
+        <h1> Alle namen!</h1>
+        @foreach(string naam in Model)
+        {
+          <p>@naam</p>
+        }
+    </div>
+</footer>
 
 
 
