@@ -9,7 +9,7 @@ namespace VaesjeBioscoop.Database
         public static List<Dictionary<string, object>> GetRows(string query)
         {
             // stel in waar de database gevonden kan worden
-            string connectionString = "Server=172.16.160.21;Port=3306;Database=110636;Uid=110636;Pwd=inf2122sql;";
+            string connectionString = "Server=172.16.160.21;Port=3306;Database=110887;Uid=110887;Pwd=inf2122sql;";
             //string connectionString = "Server=informatica.st-maartenscollege.nl;Port=3306;Database=110636;Uid=110636;Pwd=<inf2122sql>;";
 
             // maak een lege lijst waar we de namen in gaan opslaan

@@ -19,8 +19,8 @@ namespace VaesjeBioscoop.Controllers
         public IActionResult Index()
         {
             
-                // alle producten ophalen
-                var rows = DatabaseConnector.GetRows("select * from product");
+                // alle titels ophalen
+                var rows = DatabaseConnector.GetRows("select * from film");
 
                 // lijst maken om alle namen in te stoppen
                 List<string> names = new List<string>();
@@ -28,7 +28,7 @@ namespace VaesjeBioscoop.Controllers
                 foreach (var row in rows)
                 {
                     // elke naam toevoegen aan de lijst met namen
-                    names.Add(row["naam"].ToString());
+                    names.Add(row["titel"].ToString());
                 }
 
                 // de lijst met namen in de html stoppen
