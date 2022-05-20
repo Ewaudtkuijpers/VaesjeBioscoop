@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using VaesjeBioscoop.Models;
 using VaesjeBioscoop.Database;
+using System;
 
 namespace VaesjeBioscoop.Controllers
 {
@@ -15,6 +16,30 @@ namespace VaesjeBioscoop.Controllers
         {
             _logger = logger;
         }
+
+        public List<film> GetAllfilm() { 
+
+            var rows = DatabaseConnector.GetRows("select * from film");
+
+            List<film> films = new List<film>();
+
+            foreach (var row in rows)
+            {
+                film f = new film();
+                f.titel = row["titel"].ToString();
+                f.beschijving = row["beschijving"].ToString();
+                f.leeftijd = Convert.ToInt32(row["leeftijd"]);
+                f.poster = row["poster"].ToString();
+                f.id = Convert.ToInt32(row["id"]);
+
+                films.Add(f);
+            }
+
+            return films;
+        }
+
+
+
 
         public IActionResult Index()
         {
@@ -28,7 +53,7 @@ namespace VaesjeBioscoop.Controllers
                 foreach (var row in rows)
                 {
                     // elke naam toevoegen aan de lijst met namen
-                    names.Add(row["titel"].ToString());
+                    names.Add(row["poster"].ToString());
                 }
 
                 // de lijst met namen in de html stoppen
