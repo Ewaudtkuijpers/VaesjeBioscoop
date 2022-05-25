@@ -11,7 +11,7 @@ namespace VaesjeBioscoop.Database
 
         public string? titel { get; set; }
 
-        public string? beschijving { get; set; }
+        public string? beschrijving { get; set; }
 
         public int leeftijd { get; set; }
 

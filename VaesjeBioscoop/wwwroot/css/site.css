@@ -27,20 +27,25 @@ div.Bioscoop {
     padding: 0;
 }
 
-.filmpagina {
-    background-color: black;
+.film{
+    display: flex;
+    max-width: auto;
+}
+
+.film-lijst {
+    background-color: white;
     text-align: center;
-    margin-left: 0;
+/*    margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
-    width:200%;
+    padding: 0;*/
+    width:auto;
     display:flex;
     flex-wrap:wrap;
     overflow-x: scroll;
-    max-width:auto;
-    flex-flow:row;
+    max-width:300px;
+    row-gap: 5px;
 }
 
     .filmpagina img{

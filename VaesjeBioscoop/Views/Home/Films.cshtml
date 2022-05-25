@@ -1,17 +1,20 @@
-﻿@{
+﻿@using VaesjeBioscoop.Database
+@model List<film>
+@{
     ViewData["Title"] = "Films";
 }
 
-<div class="filmpagina">
-    <img src="/img/bond.jpg" alt="bioscoop">
-    <img src="/img/Edge_of_Tomorrow.jpg" alt="bioscoop">
-    <img src="/img/KungFuPanda.jpg" alt="bioscoop">
-    <img src="/img/Spider-man.jpg" alt="bioscoop">
-    <img src="/img/Mylittlepony.jpg" alt="bioscoop">
-    <img src="/img/Eternals.jpg" alt="bioscoop">
-    <img src="/img/Fantasticbeasts.jpg" alt="bioscoop">
+<div class="film-lijst">
+    @foreach (film f in Model)
+    {
+        <div class="film">
+            <img src="@f.poster">
+        </div>
+    }
 </div>
-
-
-
-
+@*
+    @foreach(film f in model){
+    <div class="filmpagina">
+    <img src= "@f.poster" >
+    </div>
+    }*@

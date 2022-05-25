@@ -27,7 +27,7 @@ namespace VaesjeBioscoop.Controllers
             {
                 film f = new film();
                 f.titel = row["titel"].ToString();
-                f.beschijving = row["beschijving"].ToString();
+                f.beschrijving = row["beschrijving"].ToString();
                 f.leeftijd = Convert.ToInt32(row["leeftijd"]);
                 f.poster = row["poster"].ToString();
                 f.id = Convert.ToInt32(row["id"]);
@@ -84,7 +84,8 @@ namespace VaesjeBioscoop.Controllers
         [Route("Films")]
         public IActionResult Films()
         {
-            return View();
+            var films = GetAllfilm();
+            return View(films);
         }
 
         [Route("Bioscopen")]
