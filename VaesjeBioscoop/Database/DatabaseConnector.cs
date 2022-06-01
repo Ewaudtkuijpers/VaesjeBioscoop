@@ -50,5 +50,31 @@ namespace VaesjeBioscoop.Database
             return rows;
         }
 
+        public static void ExecuteQuery(string query)
+        {
+            // stel in waar de database gevonden kan worden
+            //string connectionString = "Server=172.16.160.21;Port=3306;Database=110887;Uid=110887;Pwd=inf2122sql;";
+            string connectionString = "Server=informatica.st-maartenscollege.nl;Port=3306;Database=110887;Uid=110887;Pwd=inf2122sql;";
+
+            // maak een lege lijst waar we de namen in gaan opslaan
+
+
+            // verbinding maken met de database
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                // verbinding openen
+                conn.Open();
+
+                // SQL query die we willen uitvoeren
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+
+                cmd.ExecuteNonQuery();
+                
+            }
+
+
+        
+        }
     }
 }

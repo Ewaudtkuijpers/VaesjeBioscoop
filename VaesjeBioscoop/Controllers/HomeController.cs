@@ -62,20 +62,28 @@ namespace VaesjeBioscoop.Controllers
             return View();
         }
 
-        [Route("contact")]
-        public IActionResult Contact()
+        [Route("success")]
+        public IActionResult Success()
         {
            
             return View();
         }
-        
+
+        [Route("contact")]
+        public IActionResult Contact()
+        {
+
+            return View();
+        }
+
         [HttpPost]
         [Route("contact")]        
         public IActionResult Contact(Person person)
         {
             if (ModelState.IsValid)
             {
-                return Redirect("/succes");
+                DatabaseConnector.ExecuteQuery($"INSERT INTO `contact` (`id`, `voornaam`, `achternaam`, `email`, `telefoonnummer`, `bericht`) VALUES (NULL, '{person.Firstname}', '{person.Lastname}', '{person.Email}', '{person.Phone}', '{person.Message}');");
+                return Redirect("/success");
             }
 
             return View(person);
