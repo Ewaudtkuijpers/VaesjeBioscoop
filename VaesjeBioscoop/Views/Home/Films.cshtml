@@ -8,13 +8,7 @@
     @foreach (Film f in Model)
     {
         <div class="film">
-           <a href=""> <img src="@f.poster"></a>
+           <a href="Detail/@f.id"> <img src="@f.poster"></a>
         </div>
     }
 </div>
-@*
-    @foreach(film f in model){
-    <div class="filmpagina">
-    <img src= "@f.poster" >
-    </div>
-    }*@
