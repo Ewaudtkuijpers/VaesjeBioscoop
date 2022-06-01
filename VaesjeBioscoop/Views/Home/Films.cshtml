@@ -1,14 +1,14 @@
 ﻿@using VaesjeBioscoop.Database
-@model List<film>
+@model List<Film>
 @{
     ViewData["Title"] = "Films";
 }
 
 <div class="film-lijst">
-    @foreach (film f in Model)
+    @foreach (Film f in Model)
     {
         <div class="film">
-            <img src="@f.poster">
+           <a href=""> <img src="@f.poster"></a>
         </div>
     }
 </div>

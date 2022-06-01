@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VaesjeBioscoop.Database
 {
-    public class film
+    public class Film
     {
         public int id { get; set; }
 

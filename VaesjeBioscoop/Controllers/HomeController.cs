@@ -17,15 +17,15 @@ namespace VaesjeBioscoop.Controllers
             _logger = logger;
         }
 
-        public List<film> GetAllfilm() { 
+        public List<Film> GetAllfilm() { 
 
             var rows = DatabaseConnector.GetRows("select * from film");
 
-            List<film> films = new List<film>();
+            List<Film> films = new List<Film>();
 
             foreach (var row in rows)
             {
-                film f = new film();
+                Film f = new Film();
                 f.titel = row["titel"].ToString();
                 f.beschrijving = row["beschrijving"].ToString();
                 f.leeftijd = Convert.ToInt32(row["leeftijd"]);
@@ -94,9 +94,19 @@ namespace VaesjeBioscoop.Controllers
             return View();
         }
 
-        [Route("Detail")]
-        public IActionResult Detail()
+        [Route("Detail/{filmId}")]
+        public IActionResult Detail(int filmId)
+
         {
+            List<Film> films = GetAllfilm();
+            foreach (Film film in films)
+            {
+                if (film.id == filmId) 
+                { return View(film);
+
+                }
+
+            }
             return View();
         }
 

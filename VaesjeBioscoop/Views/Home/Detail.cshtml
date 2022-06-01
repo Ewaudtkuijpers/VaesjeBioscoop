@@ -1,8 +1,13 @@
-﻿@{
+﻿@model VaesjeBioscoop.Database.Film
+@{
     ViewData["Title"] = "Bioscopen";
 }
 
 <div class="Detail">
-    <img src="/img/KungFuPanda.jpg" alt="KungFuPanda">
+    <img src="@Model.poster" alt="KungFuPanda">
 </div>
 
+<p> 
+    @Model.id
+    @Model.titel
+</p>
