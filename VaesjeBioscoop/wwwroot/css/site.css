@@ -51,7 +51,7 @@ div.Bioscoop {
         width:400px;
     }
 
-    div.Detail {
+    div.detail {
         background-color: #9CD3F0;
         text-align: left;
         margin-left: 0;
@@ -60,13 +60,19 @@ div.Bioscoop {
         margin-bottom: 0;
         padding: 0;
     }
-    div.Detail img { 
+
+    div.detail img { 
         min-height: 15%;
         max-height: 15%;
         max-width: 50%;
-        min-width: 50%;
-
+        min-width: 50%; 
     }
+
+    div.detail-page{
+        display: flex;
+    }
+
+
 img {
     margin-top: 0;
     margin-bottom: 0;
@@ -95,4 +101,8 @@ footer {
     padding: 0px;
     background-color: #8CA0FA;
     color: black;
+}
+
+h1 {
+    background-color: #9CD3F0;
 }
