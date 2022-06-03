@@ -1,0 +1,47 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "SuccessContact";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<form method="post">
+
+    <div>
+        @Html.LabelFor(m=> m.Firstname)
+        @Html.TextBoxFor(m=> m.Firstname)
+        @Html.ValidationMessageFor(m=> m.Firstname)
+    </div>
+
+    <div>
+        @Html.LabelFor(m=> m.Lastname)
+        @Html.TextBoxFor(m=> m.Lastname)
+        @Html.ValidationMessageFor(m=> m.Lastname)
+    </div>
+
+     <div>
+        @Html.LabelFor(m=> m.Email)
+        @Html.TextBoxFor(m=> m.Email)
+        @Html.ValidationMessageFor(m=> m.Email)
+    </div>
+
+         <div>
+        @Html.LabelFor(m=> m.Phone)
+        @Html.TextBoxFor(m=> m.Phone)
+        @Html.ValidationMessageFor(m=> m.Phone)
+    </div>
+
+         <div>
+        @Html.LabelFor(m=> m.Message)
+        @Html.TextBoxFor(m=> m.Message)
+        @Html.ValidationMessageFor(m=> m.Message)
+    </div>
+
+    <p> 
+        Het is Gelukt!!
+    </p>
+
+    <input type="submit" value="Submit" />
+
+
+</form>

@@ -83,11 +83,24 @@ namespace VaesjeBioscoop.Controllers
             if (ModelState.IsValid)
             {
                 DatabaseConnector.ExecuteQuery($"INSERT INTO `contact` (`id`, `voornaam`, `achternaam`, `email`, `telefoonnummer`, `bericht`) VALUES (NULL, '{person.Firstname}', '{person.Lastname}', '{person.Email}', '{person.Phone}', '{person.Message}');");
-                return Redirect("/success");
+                return Redirect("/successContact");
             }
 
             return View(person);
         }
+
+        [Route("successcontact")]
+        public IActionResult SuccessContact()
+        {
+            if (ModelState.IsValid)
+            {
+                DatabaseConnector.ExecuteQuery($"INSERT INTO `contact` (`id`, `voornaam`, `achternaam`, `email`, `telefoonnummer`, `bericht`) VALUES (NULL, '{person.Firstname}', '{person.Lastname}', '{person.Email}', '{person.Phone}', '{person.Message}');");
+                return Redirect("/successContact");
+            }
+
+            return View();
+        }
+
 
         [Route("Films")]
         public IActionResult Films()
