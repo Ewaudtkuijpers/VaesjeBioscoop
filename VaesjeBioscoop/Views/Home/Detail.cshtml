@@ -3,11 +3,17 @@
     ViewData["Title"] = "Bioscopen";
 }
 
-<div class="Detail">
-    <img src="@Model.poster" alt="KungFuPanda">
+<div class="detail-page">
+
+    <div class="poster">
+        <img src="@Model.poster" alt="KungFuPanda">
+    </div>
+
+    <div class="details">
+        <h1>@Model.titel</h1>
+        <p>@Model.beschrijving</p>
+        enz enz
+    </div>
+
 </div>
 
-<p> 
-    @Model.id
-    @Model.titel
-</p>
