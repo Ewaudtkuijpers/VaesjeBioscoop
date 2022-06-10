@@ -51,8 +51,9 @@ div.Bioscoop {
 
 .film-lijst {
     display: flex;
-    max-width:200%;
-
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
     .filmpagina img{
