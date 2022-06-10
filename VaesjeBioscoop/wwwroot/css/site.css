@@ -17,6 +17,14 @@ ul {
     background-color: #8CA0FA;
 }
 
+p{
+    font-size: 200%;
+}
+
+h1{
+    font-size: 250%;
+}
+
 div.Bioscoop {
     background-color: black;
     text-align: center;
@@ -74,8 +82,8 @@ div.details {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
-    padding-bottom: 10px;    
-    background-color: white;    
+    padding-bottom: 10px;
+    background-color: #9CD3F0;
     flex: 2;
 }
 
@@ -85,10 +93,19 @@ div.detail-page .poster {
     height:800px;
 }
 
-    div.detail-page .panel{
-        background-color:#ababab;
-        border-radius:5px;
-    }
+div.detail-page .panel {
+    border: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #8960E0;
+    border-radius: 10px;
+}
 
 
     img {
