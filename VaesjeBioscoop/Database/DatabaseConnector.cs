@@ -69,12 +69,8 @@ namespace VaesjeBioscoop.Database
                 MySqlCommand cmd = new MySqlCommand(query, conn);
 
 
-                cmd.ExecuteNonQuery();
-                
-            }
-
-
-        
+                cmd.ExecuteNonQuery();                
+            }        
         }
     }
 }

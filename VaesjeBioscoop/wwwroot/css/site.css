@@ -17,6 +17,14 @@ ul {
     background-color: #8CA0FA;
 }
 
+p{
+    font-size: 200%;
+}
+
+h1{
+    font-size: 250%;
+}
+
 div.Bioscoop {
     background-color: black;
     text-align: center;
@@ -61,33 +69,60 @@ div.Bioscoop {
         width:400px;
     }
 
-    div.detail {
-        background-color: #9CD3F0;
-        text-align: left;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    div.detail img { 
-        min-height: 15%;
-        max-height: 15%;
-        max-width: 50%;
-        min-width: 50%; 
-    }
-
-    div.detail-page{
-        display: flex;
-    }
-
-
-img {
+div.detail-page {
+    display: flex;
+    background-color: #9CD3F0;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
 }
+
+    div.detail-page img { 
+        min-height: 28%;
+        max-height: 28%;
+        max-width: 70%;
+        min-width: 70%; 
+    }
+
+div.details {
+    border: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #9CD3F0;
+    flex: 2;
+}
+
+div.detail-page .poster {
+    background-size: cover;
+    flex:1;
+    height:800px;
+}
+
+div.detail-page .panel {
+    border: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #8960E0;
+    border-radius: 10px;
+}
+
+
+    img {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
 
 li {
     float: left;
@@ -113,6 +148,3 @@ footer {
     color: black;
 }
 
-h1 {
-    background-color: #9CD3F0;
-}

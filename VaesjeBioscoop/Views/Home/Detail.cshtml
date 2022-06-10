@@ -5,14 +5,14 @@
 
 <div class="detail-page">
 
-    <div class="poster">
-        <img src="@Model.poster" alt="KungFuPanda">
-    </div>
+    <div class="poster" style="background-image:url(@Model.poster)"></div>
 
     <div class="details">
+        <div class="panel">
         <h1>@Model.titel</h1>
         <p>@Model.beschrijving</p>
-        enz enz
+        <p>Leeftijd:@Model.leeftijd</p>
+        </div>
     </div>
 
 </div>
