@@ -25,6 +25,16 @@ div.Bioscoop {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    position: relative;
+}
+
+.centertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 900%;
 }
 
 .film {
